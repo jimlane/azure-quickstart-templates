@@ -186,7 +186,8 @@
                         },
                         "vhd": {
                             "uri": "[concat(variables('osDiskVhdContainer'),parameters('vmNamePrefix'),copyindex(),'osDisk.vhd')]"
-                        }
+                        },
+                        "createOption": "FromImage"
                     }
                 },
                 "networkProfile": {
